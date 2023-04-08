@@ -75,6 +75,9 @@ label {
   font-weight: 600;
   font-size: 1.4rem;
   color: #e5e7eb;
+
+  gap: .4rem;
+  align-items: center;
 }
 input {
   margin-top: 1.4rem;
@@ -96,3 +99,9 @@ input:focus{
 .col-2 .input-wrapper:nth-child(1){
   flex-basis: 70%;
 }
+
+.help img{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
