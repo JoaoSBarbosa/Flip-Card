@@ -5,11 +5,41 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-:root{
+img {
+  max-width: 100%;
+  display: block;
+}
+:root {
   font-size: 62.5%;
 }
 
-body{
+body {
   font-size: 1.6rem;
+  background-color: #1f2937;
+}
+form {
+  border: 1px solid red;
+  padding: 2.4rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+#credit-card {
+  width: 32.8rem;
+  height: 21.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+#credit-card > div {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+#credit-card .front-card {
+ 
+}
+#credit-card .back-card {
+  
 }
