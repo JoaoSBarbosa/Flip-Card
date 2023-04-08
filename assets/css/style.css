@@ -7,6 +7,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body,
+input,
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+}
 img {
   max-width: 100%;
   display: block;
@@ -16,7 +22,6 @@ img {
 }
 
 body {
-  font-size: 1.6rem;
   background-color: #1f2937;
 }
 form {
@@ -69,11 +74,17 @@ form {
 label {
   font-weight: 600;
   font-size: 1.4rem;
-  color: #fff;
+  color: #e5e7eb;
 }
 input {
   margin-top: 1.4rem;
   width: 100%;
-  font-family: "Source Sans pro";
-  font-family: "Source Sans Pro", sans-serif;
+  padding: 1.2rem;
+  border: 0.1rem solid #374151;
+  background-color: #111827;
+  border-radius: 0.4rem;
+  color: #f3f4f6;
+}
+input:focus{
+  outline: 0.15rem solid #9333ea;
 }
