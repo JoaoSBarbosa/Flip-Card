@@ -8,13 +8,29 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <form action="" id="credit-card">
-      <div class="front-card card">
-        <img src="assets/img/card-front.png" alt="">
-      </div>
-      <div class="back-card card">
-        <img src="assets/img/card-back.png" alt="">
-      </div>
+    <form>
+      <section id="credit-card">
+        <div class="front-card card">
+          <img src="assets/img/card-front.png" alt="" />
+        </div>
+        <div class="back-card card">
+          <img src="assets/img/card-back.png" alt="" />
+        </div>
+      </section>
+      <section class="inputs flex">
+        <div class="input-wrapper">
+          <label for="cc-number">Número do Cartão</label>
+          <input id="cc-number" type="text" placeholder="**** **** **** ****" />
+        </div>
+        <div class="input-wrapper">
+          <label for="cc-holder">Nome do Titular</label>
+          <input
+            id="cc-holder"
+            type="text"
+            placeholder="Nome como está no cartão"
+          />
+        </div>
+      </section>
     </form>
   </body>
 </html>

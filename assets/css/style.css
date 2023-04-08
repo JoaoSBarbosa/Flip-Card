@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,300&display=swap"); */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,7 +20,6 @@ body {
   background-color: #1f2937;
 }
 form {
-  border: 1px solid red;
   padding: 2.4rem;
   max-width: 40rem;
   margin: 0 auto;
@@ -26,10 +27,7 @@ form {
 #credit-card {
   width: 32.8rem;
   height: 21.2rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
+
   perspective: 60rem;
 }
 #credit-card > div {
@@ -59,4 +57,23 @@ form {
 #credit-card:active .back-card,
 #credit-card:hover .back-card {
   transform: rotateY(0deg);
+}
+.flex {
+  display: flex;
+}
+.inputs {
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 4.8rem;
+}
+label {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #fff;
+}
+input {
+  margin-top: 1.4rem;
+  width: 100%;
+  font-family: "Source Sans pro";
+  font-family: "Source Sans Pro", sans-serif;
 }
