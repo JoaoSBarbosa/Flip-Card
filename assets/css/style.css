@@ -95,13 +95,14 @@ input:invalid:focus{
   border: 0.15rem solid #fb7185;
 }
 input + .warning{
-  display: none;
-}
-input:invalid:focus + .warning{
+  opacity: 0;
   font-size: 1.4rem;
   margin-top: .8rem;
+}
+input:invalid:focus + .warning{
   color: #fb7185;
   display: flex;
+  opacity: 1;
   align-items: center;
   gap: .4rem;
 }
