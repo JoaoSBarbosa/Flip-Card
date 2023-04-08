@@ -88,3 +88,11 @@ input {
 input:focus{
   outline: 0.15rem solid #9333ea;
 }
+
+.col-2{
+  gap: 2.4rem;
+  align-items: center;
+}
+.col-2 .input-wrapper:nth-child(1){
+  flex-basis: 70%;
+}
