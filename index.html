@@ -27,7 +27,16 @@
       <section class="inputs flex">
         <div class="input-wrapper">
           <label for="cc-number">Número do Cartão</label>
-          <input id="cc-number" type="text" placeholder="**** **** **** ****" />
+          <input
+            id="cc-number"
+            type="text"
+            placeholder="**** **** **** ****"
+            required
+          />
+          <div class="warning flex">
+            <img src="assets/img/Warning.svg" alt="ícone de alerta" />
+            Número do cartão é obrigatório
+          </div>
         </div>
         <div class="input-wrapper">
           <label for="cc-holder">Nome do Titular</label>
@@ -35,31 +44,41 @@
             id="cc-holder"
             type="text"
             placeholder="Nome como está no cartão"
+            required
           />
+          <div class="warning flex">
+            <img src="assets/img/Warning.svg" alt="ícone de alerta" />
+            Nome do titular é obrigatório
+          </div>
         </div>
         <div class="col-2 flex">
           <div class="input-wrapper">
             <label for="cc-validity">Validade</label>
-            <input 
-            type="text" 
-            id="cc-validity" 
-            placeholder="mm/aa" />
+            <input type="text" id="cc-validity" placeholder="mm/aa" required />
+            <div class="warning flex">
+              <img src="assets/img/Warning.svg" alt="ícone de alerta" />
+              Campo obrigatório
+            </div>
           </div>
           <div class="input-wrapper">
-            <label class="flex help" for="cc-cvv">CVV
-              <img src="assets/img/Question.svg" 
-              alt="icone de ajuda"
-              title="Esse número está localizado nas costas do seu cartão">
+            <label class="flex help" for="cc-cvv"
+              >CVV
+              <img
+                src="assets/img/Question.svg"
+                alt="icone de ajuda"
+                title="Esse número está localizado nas costas do seu cartão"
+              />
             </label>
-            <input 
-            type="text" 
-            id="cc-cvv" 
-            placeholder="***" />
+            <input type="text" id="cc-cvv" placeholder="***" required />
+            <div class="warning flex">
+              <img src="assets/img/Warning.svg" alt="ícone de alerta" />
+              Campo obrigatório
+            </div>
           </div>
         </div>
       </section>
       <section class="info-security flex">
-        <img src="assets/img/ShieldCheck.svg" alt="">
+        <img src="assets/img/ShieldCheck.svg" alt="" />
         Seus dados estão seguros
       </section>
       <button>Adicionar Cartão</button>
